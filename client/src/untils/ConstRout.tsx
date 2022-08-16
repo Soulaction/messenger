@@ -1,0 +1,6 @@
+export const LOGIN_ROUT = '/login'
+export const REGISTRATION_ROUT = '/registration'
+export const DIALOGS_ROUT = '/dialogs'
+export const MAIN_ROUT = '/mypage'
+export const FRIENDS_ROUT = '/friends'
+export const CORRESPONDENCE_ROUT = '/dialogs/:id'
