@@ -14,7 +14,35 @@
     height: 50px;
     position: relative;
   }
-  .rotate_shadows:after,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* .rotate_shadows:after,
   .rotate_shadows:before {
     content: "";
     border-radius: 50%;
@@ -42,4 +70,4 @@
     0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
     50% {transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);}
     100% {transform: rotateZ(-360deg) scaleX(1) scaleY(1);}
-  }
+  } */

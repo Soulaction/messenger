@@ -34,7 +34,7 @@ const Auth = () => {
             setCheckPassword(false)
         }
         if (email.current.value && password.current.value) {
-
+            
             try {
                 let data = await authorization(email.current.value, password.current.value)
 

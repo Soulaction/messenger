@@ -1,10 +1,9 @@
-import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { LOGIN_ROUT } from "../../untils/ConstRout";
 import s from "./Registration.module.css"
 import icon from "../../assets/icons/upload.png"
 import { useRef, useState } from "react";
-import { registration } from "../../http/userAPI";
+import { registration, uploadFile } from "../../http/userAPI";
 
 const Registration = () => {
 
@@ -16,6 +15,7 @@ const Registration = () => {
     const surname = useRef('')
     const email = useRef('')
     const password = useRef('')
+    const[file, setFile] = useState()
 
     const [checkName, setCheckName] = useState(false)
     const [checkSurname, setCheckSurname] = useState(false)
@@ -47,6 +47,17 @@ const Registration = () => {
             setCheckPassword(false)
         }
 
+        let registrationUser = async (formData) => {
+            await registration(formData).then(
+                data => {
+                    const fileFormData = new FormData()
+                    fileFormData.append('id', data.id)
+                    fileFormData.append('file', file)
+                    uploadFile(fileFormData)
+                }
+            )
+        }
+
         if (name.current.value && surname.current.value && email.current.value && password.current.value) {
 
             try {
@@ -60,10 +71,9 @@ const Registration = () => {
                 formData.append('surname', surname.current.value)
                 formData.append('email', email.current.value)
                 formData.append('password', password.current.value)
-                formData.append('avarar', 'avatar')
 
                 try {
-                    await registration(formData)
+                    await registrationUser(formData)
                     navigate(LOGIN_ROUT)
                 } catch (e) {
                     setWarn(e.response.data)
@@ -84,7 +94,7 @@ const Registration = () => {
                 <input ref={email} className={checkEmail ? s.warning : ''} placeholder="Введите email"></input>
                 <input ref={password} className={checkPassword ? s.warning : ''} type="password" placeholder="Введите пароль" />
                 <div className={s.input_wrapper}>
-                    <input className={s.input_file} type="file" id="input_file" />
+                    <input onChange={e => setFile(e.target.files[0])} className={s.input_file} type="file" id="input_file" />
                     <label htmlFor="input_file" className={s.input_file_button}>
                         <span className={s.input_file_icon_wrapper}>
                             <img className={s.input_file_icon} src={icon} alt="Выбрать файл" width="25" />

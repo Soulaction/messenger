@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<report>
+	<headers>
+		<header id="1">
+			<hr>
+				<hc s="1" w="1" r="2">
+					<hl>Цех</hl>
+				</hc>
+				<hc s="2" w="2" r="1">
+					<hl>Буратино</hl>
+				</hc>
+				<hc s="4" w="2" r="1">
+					<hl>Мальвина</hl>
+				</hc>
+				<hc s="6" w="1" r="1">
+					<hl></hl>
+				</hc>
+				<hc s="7" w="1" r="1">
+					<hl></hl>
+				</hc>
+				<hc s="8" w="1" r="1">
+					<hl></hl>
+				</hc>
+			</hr>
+			<hr>
+				<hc s="2" w="1" r="1">
+					<hl>План,шт</hl>
+				</hc>
+				<hc s="3" w="1" r="1">
+					<hl>Сделано шт</hl>
+				</hc>
+				<hc s="4" w="1" r="1">
+					<hl>План,шт</hl>
+				</hc>
+				<hc s="5" w="1" r="1">
+					<hl></hl>
+				</hc>
+				<hc s="6" w="1" r="1">
+					<hl></hl>
+				</hc>
+				<hc s="7" w="1" r="1">
+					<hl></hl>
+				</hc>
+				<hc s="8" w="1" r="1">
+					<hl></hl>
+				</hc>
+			</hr>
+		</header>
+	</headers>
+	<page>
+		<title>ОТЧЕТ О ПРОИЗВОДСТВЕ ИГРУШЕК за 19 августа 2012г.</title>
+		<hid>1</hid>
+		<data w="8">
+			<block type="null">
+				<dr>
+					<dc r="1" w="1" s="1" o="null">Цех №1</dc>
+					<dc r="1" w="1" s="2" o="null">100</dc>
+					<dc r="1" w="1" s="3" o="null">110</dc>
+					<dc r="1" w="1" s="4" o="null">90</dc>
+					<dc r="1" w="1" s="5" o="null">90</dc>
+					<dc r="1" w="1" s="6" o="null"></dc>
+					<dc r="1" w="1" s="7" o="null"></dc>
+					<dc r="1" w="1" s="8" o="null"></dc>
+				</dr>
+				<dr>
+					<dc r="1" w="1" s="1" o="null">Цех №2</dc>
+					<dc r="1" w="1" s="2" o="null">120</dc>
+					<dc r="1" w="1" s="3" o="null">95</dc>
+					<dc r="1" w="1" s="4" o="null">70</dc>
+					<dc r="1" w="1" s="5" o="null">70</dc>
+					<dc r="1" w="1" s="6" o="null"></dc>
+					<dc r="1" w="1" s="7" o="null"></dc>
+					<dc r="1" w="1" s="8" o="null"></dc>
+				</dr>
+				<dr>
+					<dc r="1" w="1" s="1" o="null">Итого</dc>
+					<dc r="1" w="1" s="2" o="null">220</dc>
+					<dc r="1" w="1" s="3" o="null">205</dc>
+					<dc r="1" w="1" s="4" o="null">160</dc>
+					<dc r="1" w="1" s="5" o="null">160</dc>
+					<dc r="1" w="1" s="6" o="null"></dc>
+					<dc r="1" w="1" s="7" o="null"></dc>
+					<dc r="1" w="1" s="8" o="null"></dc>
+				</dr>
+			</block>
+		</data>
+		<comments>
+			<cl>Примечание. Цех №2 не работал 3 часа</cl>
+		</comments>
+	</page>
+</report>
