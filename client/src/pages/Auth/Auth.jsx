@@ -68,7 +68,7 @@ const Auth = () => {
         <h4 className={warn ? s.warn_mes_y : s.warn_mes_n}>{warn}</h4>
         <div className={s.redirect}>
           <div className={s.auth}>
-            <Link to={REGISTRATION_ROUT}>Регистрация !!!</Link>
+            <Link to={REGISTRATION_ROUT}>Регистрация !! !!!</Link>
           </div>
           <div className={s.registration}>
             <button onClick={auth}>Войти</button>
